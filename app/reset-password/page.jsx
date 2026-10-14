@@ -7,7 +7,7 @@ import AuthCard from "../../components/auth/AuthCard";
 import FormField from "../../components/auth/FormField";
 import Alert from "../../components/ui/Alert";
 import { btnPrimary } from "../../components/ui/style";
-import { apiFetch, errorMessage } from "@/lib/api";
+import { apiFetch, errorMessage } from "../../lib/api";
 
 function ResetForm() {
   const token = useSearchParams().get("token");
