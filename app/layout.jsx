@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 
 export const metadata = {
   // Needed so shared links get absolute Open Graph URLs. Set NEXT_PUBLIC_SITE_URL in production.
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_SITE_URL || "http://localhost:3000"),
   title: "Dwellst | Long-term rentals in the Philippines",
   description: "Find rooms, bedspaces, boardinghouses, apartments and houses for long-term rent in the Philippines.",
 };
