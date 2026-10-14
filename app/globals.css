@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* roomSamar design tokens (documentation section 5.2).
+   Usage in classes: bg-primary, hover:bg-primary-hover, bg-primary-light, bg-accent,
+   bg-background, bg-surface, text-ink, text-muted, border-line, text-success, text-warning, text-error */
+@theme static {
+  --color-primary: #176b52;
+  --color-primary-hover: #105540;
+  --color-primary-light: #e7f3ed;
+  --color-accent: #f4b860;
+  --color-background: #f8faf8;
+  --color-surface: #ffffff;
+  --color-ink: #202a26;
+  --color-muted: #65716b;
+  --color-line: #e2e8e3;
+  --color-success: #287a4b;
+  --color-warning: #a96312;
+  --color-error: #c43d3d;
+}
+
+/* Inter, with a system sans-serif fallback (documentation section 5.3) */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Visible keyboard focus everywhere (documentation sections 4 and 5) */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
